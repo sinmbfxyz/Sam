@@ -3,8 +3,12 @@ import java.util.*;
 class Demo {
     int a;
 
-    public int sum(int length, int breadth) {
+    public int area(int length, int breadth) {
         return (length * breadth);
+    }
+
+    void mul(int a, int b, int c) {
+        System.out.println("Multiplication of three numbers" + (a * b * c));
     }
 }
 
@@ -16,7 +20,8 @@ public class Democlass {
         int length = sc.nextInt();
         System.out.println("Enter the breadth");
         int breadth = sc.nextInt();
-        System.out.println("The area is " + obj.sum(length, breadth));
+        System.out.println("The area is " + obj.area(length, breadth));
+        obj.mul(10, 20, 30);
     }
 
 }
